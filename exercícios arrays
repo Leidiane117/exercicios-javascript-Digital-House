@@ -1,0 +1,160 @@
+
+1. Escreva a função contem(array, numero) que nos diz se um array contém um determinado elemento.
+
+ contem([1, 6, 7, 6], 7)
+true
+ contem([1, 6, 7, 6], 6)
+true
+ contem([], 7)
+false
+ contem([8, 5], 7)
+false
+
+function contem(array, numero){
+
+        var resultado= array.indexOf(numero)
+         if(resultado>=0){
+         return true;
+      }
+            else{
+            return false;
+            }
+        } 
+
+
+
+2. Declarar uma função chamada “mover”, que recebe dois arrays, remove o último elemento do primeiro e adiciona-o ao segundo.
+
+Exemplo:
+
+var umArray = [1, 2, 3];
+var outroArray = [4, 5];
+
+mover(umArray, outroArray);
+
+umArray //deveria ser [1, 2]
+outroArray //deveria ser [4, 5, 3]
+
+function mover(umArray,outroArray){
+            var resultado = umArray.pop();
+                outroArray.push(resultado);
+          
+            }
+
+
+
+3. Queremos escrever uma função naipeDeTruco, que dado um naipe, devolva uma lista de strings, uma por cada carta desse naipe seguindo as cartas do truco:
+
+ naipeDeTruco("espadas")
+["1 de espadas", "2 de espadas", "3 de espadas" ..., "12 de espadas"]
+Lembre-se que as cartas de truco incluem todas as cartas numeradas de 1 a 12, com exceção das cartas 8 e 9
+
+function  naipeDeTruco(naipe){
+   var novoArray=[];
+   for(let i=1;i<12;i++){
+      if(i!=8 && i!=9){
+
+         novoArray.push(i+" de "+naipe)
+
+      }
+   }
+return novoArray;
+
+
+ }
+
+4. Escreva a função saldoDeMesesComLucro que receba um período e retorne apenas os saldo dos meses que obteve lucro.
+
+function saldoDeMesesComLucro(umPeriodo){
+      var novoArray=[];
+    for (let mes=0; mes< umPeriodo.length; mes++) {
+        var result=  umPeriodo[mes];
+         if (result>0){
+      novoArray.push(umPeriodo[mes]);
+     }
+   }
+   return novoArray;
+    }
+ 
+ 
+ 
+ 5. Escreva a função quantidadeDeMesesComPerda que receba um período e retorne a quantidade de meses com perda
+ 
+ function quantidadeDeMesesComPerda(umPeriodo) {
+        var quantidade= 0;
+        for (let mes=0; mes< umPeriodo.length; mes++) {
+        var result=  umPeriodo[mes];
+        if (result<0){
+           
+      quantidade= quantidade+1;
+     }
+     
+
+   }
+   return quantidade;
+ }
+    
+    
+  6. Escreva a função quantidadeDeMesesComLucro que receba um período e que retorne a quantidade de meses com lucro
+ 
+  
+  function quantidadeDeMesesComLucro(umPeriodo) {
+   var quantidade= 0;
+     
+   for (let mes=0; mes< umPeriodo.length; mes++) {
+        var result=  umPeriodo[mes];
+     if (result >0){
+           
+      quantidade= quantidade+1;
+     }
+
+
+   }
+   return quantidade;
+ }  
+    
+    
+ 7. Escreva a função lucroTotal que receba um período e que retorne a soma de todo o  lucro do período. 
+ 
+ function lucroTotal(umPeriodo) {
+   var soma= 0;
+   var mes = 0;
+   for (var i=0; i<umPeriodo.length; i++) {
+     mes = umPeriodo[i];
+     soma= soma+ mes;
+   }
+   return soma;
+ }   
+    
+    
+  8. Escreva a função nada”, que recebe um número como parâmetro. Usando apenas o máximo de um “if” apenas. Talvez os arrays possam ser úteis aqui.
+
+  *Você tem que devolver a medalha que corresponde às primeiras posições de uma competição:
+
+ medalhaDeAcordoComPosto (1)
+"ouro"
+ medalhaDeAcordoComPosto (2)
+"prata"
+ medalhaDeAcordoComPosto (3)
+"bronze"
+medalhaDeAcordoComPosto (4)
+"nada"
+ medalhaDeAcordoComPosto (5)
+"nada"
+
+function medalhaDeAcordoComPosto(numero){
+                medalha=["nada","ouro","prata","bronze"];
+   
+                if(numero > 3){
+
+                    return "nada";
+
+                }
+                else{
+
+                    return medalha[numero];
+                }
+
+
+
+      }
