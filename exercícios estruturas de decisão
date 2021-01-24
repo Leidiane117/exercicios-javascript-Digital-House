@@ -1,0 +1,192 @@
+
+1. Declara a variável diaDeSemana que receba uma string "domingo". 
+Depois implemente uma condicional usando o if que compare se diaDeSemana é igual a "domingo", se for verdadeiro imprima uma string "Hoje é dia de futebol!!!".
+
+var diaDeSemana = "domingo";
+
+if (diaDeSemana == "domingo"){
+
+      console.log("Hoje é dia de futebol! ! !");
+
+}
+
+
+
+2. Define a função hojeSeJoga, que receba por parâmetro uma string que informe o día da semana. Esta função deve retornar"Hoje é dia de futebol!!!" se parâmetro for "domingo", caso contrário deve retornar "Hoje não é dia de futebol :(".
+
+function hojeSeJoga(domingo)
+{
+   if (domingo=="domingo")
+   { 
+       return "Hoje é dia de futebol! ! !";
+   } else    {
+   return "Hoje não é dia de futebol :(";
+   }
+}
+
+
+3. Agora, precisamos de suas ótimas habilidades para definir a função sinal, que, dado um número, retorna apenas um dos seguintes valores:
+
+1, se o número é positivo
+0 se o número é zero
+-1, se o número é negativo
+
+é positivo
+é um múltiplo de 2 ou 3
+não é 15
+
+function sinal(umNumero)
+{
+
+   if (umNumero > 0) {
+
+      return 1;
+   }
+   else if (umNumero == 0) {
+
+      return 0;
+   }
+   else if (umNumero < 0) {
+
+      return -1;
+   }
+}
+
+
+
+
+4. Escreva a função eNumeroDaSorte que, recebendo um número, diz a se é um número da sorte. 
+
+*Requisitos: numero maior que 0 e par ou numero divisível por 3 e diferente de 15 
+
+function eNumeroDaSorte(umNumero){
+
+   return umNumero > 0 && umNumero % 2 == 0 || umNumero % 3 == 0 && umNumero != 15;
+
+} 
+
+
+5. Defina a função possoIrAoBanco que, receba dois parâmetros, o primeiro é diaDaSemana (string) e o segundo horaAtual(numero), a função deve retornar true, apenas se o banco estiver aberto.
+
+*Requisitos: Primeiro de tudo precisamos saber que um banco está fechado quando é fim de semana (sábado ou domingo) e não está no horário bancário (9 às 15hs).
+
+
+possoIrAoBanco("segunda-feira", 10);
+// true, é um dia da semana e está no horário bancário, 10hs
+possoIrAoBanco("terça-feira", 18);
+// false, é dia da semana e NÃO está no horário bancário, 18hs
+possoIrAoBanco("Sábado", 11);
+// false, é fim de semana
+
+*/
+
+
+function  possoIrAoBanco(diaDaSemana,horaAtual){
+
+   return horaAtual >= 9 && horaAtual <= 15 &&  diaDaSemana !="Sábado" && diaDaSemana !="Domingo";
+
+}
+
+
+
+6. Defina a função filosofoHipster que recebe como parâmetro: a profissão de uma pessoa (string), nacionalidade (string) e o número de quilômetros que ele anda por dia (número). Com esses parâmetros avalie se essa pessoa é ou não (true / false), um filósofo Hipster. Tenha em mente que um filósofo Hipster é um Músico, nascido no Brasil e que gosta de andar mais de 2 quilômetros por dia.
+
+*Requisitos: profissão Músico, nacionalidade do Brasil e km acima de 2 por dia
+
+Exemplo:
+filosofoHipster ('Músico', 'Brasil', 5) // verdadeiro
+filosofoHipster ('Jogador de futebol', 'Alemanha', 12) // false
+filosofoHipster ('Músico', 'Argentina', 1) // false
+
+function filosofoHipster(profissão,nacionalidade,km){
+
+   return profissão=="Músico" && nacionalidade=="Brasil" && km >2;
+
+
+}
+
+
+
+7. Escreva a função podeSeAposentar que recebe por parâmetro a idade, o sexo e os anos de contribuição previdenciária que uma pessoa tem, exemplo:
+
+ podeSeAposentar(62, "F", 34)
+true
+
+
+*Requisitos: a idade mínima para se aposentar para mulheres é 60 anos, enquanto que para homens é 65. Em ambos os casos, você deve ter pelo menos 30 anos de contribuição.
+
+function podeSeAposentar(idade,sexo, anosDeContribuicao){
+
+   return idade>=60 && sexo=="F" && anosDeContribuicao>=30 || idade >=65 && sexo=="M" && anosDeContribuicao>=30;
+
+}
+
+
+
+8. Defina a função podeSubir, recebendo 3 parâmetros: alturaPessoa (numero), vemComCompania (booleano), temProblemaCardiaco (booleano), retorne true ou false conforme o caso. Levar em conta as condições necessárias mencionadas acima.
+
+*Requisitos: Atingir a altura mínima de 1,5 m (ou 1,2 m, se acompanhada por um adulto), Não ter qualquer problema cardíaco
+ 
+ podeSubir(1.7, false, true)
+false // não pode subir
+      // porque embora seja maior do que 1.5m,
+      // tem um problema cardíaco
+      
+function podeSubir(alturaPessoa,vemComCompania,temProblemaCardiaco){
+
+   return alturaPessoa>= 1.5 && temProblemaCardiaco == false || alturaPessoa>=1.2 && vemComCompania== true && temProblemaCardiaco == false;
+
+
+}
+
+9. Defina a função medalhaSegundoOPosto que recebe o posto como parâmetro e retorna um texto de acordo com o parâmetro. 
+
+primeiro lugar: corresponde "ouro"
+segundo lugar: corresponde "prata"
+terceiro lugar: corresponde "bronze"
+outros lugares: corresponde "Continue participando"
+
+
+ medalhaSegundoOPosto(1)
+"ouro"
+ medalhaSegundoOPosto(2)
+"prata"
+ medalhaSegundoOPosto(3)
+"bronze"
+medalhaSegundoOPosto(5)
+"Continue participando"
+
+function medalhaSegundoOPosto(posto){
+
+   if(posto==1)
+   {
+
+      return "ouro";
+
+   }
+
+   else if(posto==2){
+
+      return "prata";
+
+   }
+
+
+   else if(posto==3){
+
+      return "bronze";
+
+
+   }
+   else{
+
+      return "Continue participando";
+
+   }
+
+}
+
+
+
+
+
