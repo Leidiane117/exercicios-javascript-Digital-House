@@ -1,0 +1,41 @@
+Execute uma função chamada passandoPelosPares() que mostra pelo console aqui eu tenho o valor de x para cada valor PAR que percorra i de 0 até e inclusive 6.
+
+Lembre-se que como vamos passar apenas pelos pares a repetição deve ocorrer 4 vezes, pois o objetivo é imprimir apenas os números pares.
+Para saber se um número é par, usamos o operador % (módulo) que me retorna o resto da divisão de um número por outro. Por exemplo: 11% 5 -> retorna o resto da divisão 11 por 5. Neste caso retorna 1.
+
+
+imprimirAzul(3)
+"AzulAzulAzul"
+
+
+somarMoedasDe25(quantidadeDeMoedas)
+
+
+ somarMoedasDe25(7)
+1.75
+
+
+
+Sabemos que usamos i++ para incrementar em uma unidade o i a cada iteração. Mas se tentarmos incrementar o i em duas unidades a cada iteração? Experimente utilizar i+=2 e veja o que acontece.
+
+
+
+Defina a função somaDosPares(x) que retorna a soma total de todos os números que são pares, ou seja, divisíveis por 2 obtendo resto 0. Desta forma: 0 + 2 + 4 + 6 + 8 + 10 + ..... X
+
+
+Defina a função chamada somatoria, que receba como parâmetro um número e retorne a soma dos números antecessores a ele. Por exemplo:
+
+
+ somatoria(4)
+6
+
+
+As calorias são calculadas da seguinte maneira: calorias (que consome a cada volta), ou seja 5 multiplicado (*) pelo número da volta atual, já que cada vez as voltas consomem mais e mais calorias.
+
+Sabendo isso, crie uma função chamada caloriasDeTrote(), que recebe por parâmetro o número de voltas representado por um valor numérico e retorne a quantidade de calorias que será consumida.
+
+Por exemplo:
+
+ 	 caloriasDeTrote(2)
+Deveria devolver 15 onde 5 calorias são da primeira volta (5 * 1) mais 10 calorias da segunda (5 * 2).
+Deveria devolver 15 onde 5 calorias são da primeira volta (5 * 1) mais 10 calorias da segunda (5 * 2).
