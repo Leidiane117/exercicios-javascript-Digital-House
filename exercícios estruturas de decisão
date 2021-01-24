@@ -1,5 +1,5 @@
 
-1. Declara a variável diaDeSemana que receba uma string "domingo". 
+1. Declare a variável diaDeSemana que receba uma string "domingo". 
 Depois implemente uma condicional usando o if que compare se diaDeSemana é igual a "domingo", se for verdadeiro imprima uma string "Hoje é dia de futebol!!!".
 
 var diaDeSemana = "domingo";
@@ -12,7 +12,7 @@ if (diaDeSemana == "domingo"){
 
 
 
-2. Define a função hojeSeJoga, que receba por parâmetro uma string que informe o día da semana. Esta função deve retornar"Hoje é dia de futebol!!!" se parâmetro for "domingo", caso contrário deve retornar "Hoje não é dia de futebol :(".
+2. Defina a função hojeSeJoga, que receba por parâmetro uma string que informe o día da semana. Esta função deve retornar"Hoje é dia de futebol!!!" se parâmetro for "domingo", caso contrário deve retornar "Hoje não é dia de futebol :(".
 
 function hojeSeJoga(domingo)
 {
