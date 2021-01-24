@@ -1,0 +1,119 @@
+Declara a variável diaDeSemana que receba uma string "domingo". Depois implemente uma condicional usando o if que compare se diaDeSemana é igual a "domingo", se for verdadeiro imprima uma string "Hoje é dia de futebol!!!".
+
+
+Define a função hojeSeJoga, que receba por parâmetro uma string que informe o día da semana. Esta função deve retornar"Hoje é dia de futebol!!!" se parâmetro for "domingo", caso contrário deve retornar "Hoje não é dia de futebol :(".
+
+Lembre-se que as variáveis e as strings devem ser escritas igual ao enunciado, respeitando os espaços e as exclamações.
+
+
+Portanto, vamos definir a função sinal que recebe um número para alcançar o objetivo desejado. DICA: Lembre-se que você pode precisar usar mais de um if.
+
+
+Agora, precisamos de suas ótimas habilidades para definir a função sinal, que, dado um número, retorna apenas um dos seguintes valores:
+
+1, se o número é positivo
+0 se o número é zero
+-1, se o número é negativo
+
+
+
+
+é positivo
+é um múltiplo de 2 ou 3
+não é 15
+
+
+Escreva a função eNumeroDaSorte que, recebendo um número, diz a se é um número da sorte. Lembre-se de que o número deve obedecer às três condições mencionadas. Seu desafio adicional será: NÃO use o if.
+
+Para descobrir se um número é multiplo de outro o resto da divisão deve resultar em 0. 15/3 = 5 e o resto é 0. Em programação para sabermos o resto de uma divisão, usamos o símbolo de porcentagem (%). Assim: 15%3 == 0, dessa forma sabemos que 15 é múltiplo de 3.
+
+
+Defina a função possoIrAoBanco que, receba dois parâmetros, o primeiro é diaDaSemana (string) e o segundo horaAtual(numero), a função deve retornar true, apenas se o banco estiver aberto.
+
+
+Primeiro de tudo precisamos saber que um banco está fechado quando é fim de semana (sábado ou domingo) e não está no horário bancário (9 às 15hs).
+
+
+possoIrAoBanco("segunda-feira", 10);
+// true, é um dia da semana e está no horário bancário, 10hs
+possoIrAoBanco("terça-feira", 18);
+// false, é dia da semana e NÃO está no horário bancário, 18hs
+possoIrAoBanco("Sábado", 11);
+// false, é fim de semana
+
+*/
+
+
+Defina a função filosofoHipster que recebe como parâmetro: a profissão de uma pessoa (string), nacionalidade (string) e o número de quilômetros que ele anda por dia (número). Com esses parâmetros avalie se essa pessoa é ou não (true / false), um filósofo Hipster. Tenha em mente que um filósofo Hipster é um Músico, nascido no Brasil e que gosta de andar mais de 2 quilômetros por dia.
+
+
+Exemplo:
+filosofoHipster ('Músico', 'Brasil', 5) // verdadeiro
+filosofoHipster ('Jogador de futebol', 'Alemanha', 12) // false
+filosofoHipster ('Músico', 'Argentina', 1) // false
+
+
+precedencia not && e ||
+
+
+
+E/&&
+
+
+A	B	A ^ B
+V	V	V
+V	F	F
+F	V	F
+F	F	F
+
+
+
+
+
+Escreva a função podeSeAposentar que recebe por parâmetro a idade, o sexo e os anos de contribuição previdenciária que uma pessoa tem, exemplo:
+
+ podeSeAposentar(62, "F", 34)
+true
+
+
+Tenha em mente que a idade mínima para se aposentar para mulheres é 60 anos, enquanto que para homens é 65. Em ambos os casos, você deve ter pelo menos 30 anos de contribuição.
+
+
+
+
+Atingir a altura mínima de 1,5 m (ou 1,2 m, se acompanhada por um adulto)
+Não ter qualquer problema cardíaco
+Defina a função podeSubir, recebendo 3 parâmetros: alturaPessoa (numero), vemComCompania (booleano), temProblemaCardiaco (booleano), retorne true ou false conforme o caso. Levar em conta as condições necessárias mencionadas acima.
+
+ podeSubir(1.7, false, true)
+false // não pode subir
+      // porque embora seja maior do que 1.5m,
+      // tem um problema cardíaco
+
+
+
+primeiro lugar: corresponde "ouro"
+segundo lugar: corresponde "prata"
+terceiro lugar: corresponde "bronze"
+outros lugares: corresponde "Continue participando"
+
+
+
+
+ medalhaSegundoOPosto(1)
+"ouro"
+ medalhaSegundoOPosto(2)
+"prata"
+ medalhaSegundoOPosto(3)
+"bronze"
+medalhaSegundoOPosto(5)
+"Continue participando"
+
+
+
+Defina a função medalhaSegundoOPosto que recebe o posto como parâmetro e retorna um texto de acordo com o parâmetro. Dica: nessa função você pode usar vários if.
+
+
+
+
+
