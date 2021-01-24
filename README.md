@@ -1,4 +1,4 @@
-# Exercicios-JavaScript
+# Exercícios-JavaScript
 
 ## Arquivos
 
