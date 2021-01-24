@@ -1,0 +1,65 @@
+1. Execute uma função chamada passandoPelosPares() que mostra pelo console aqui eu tenho o valor de x para cada valor PAR que percorra i de 0 até e inclusive 6.
+
+* Lembre-se que como vamos passar apenas pelos pares a repetição deve ocorrer 4 vezes, pois o objetivo é imprimir apenas os números pares.
+
+function passandoPelosPares(){
+   for( var i=0; i<=6;i++){
+      if( i % 2 == 0){
+         console.log("aqui eu tenho o valor de "+i)
+      }
+
+
+   }
+
+
+}
+
+
+
+2 .Defina a função somaDosPares(x) que retorna a soma total de todos os números que são pares, ou seja, divisíveis por 2 obtendo resto 0. Desta forma: 0 + 2 + 4 + 6 + 8 + 10 + ..... X
+
+function somaDosPares(x) {
+     var soma=0;
+    for(var i=0; i<=x; i+=2){
+         soma= soma +i;
+     }
+      return soma; 
+    }
+
+
+
+3. Defina a função chamada somatoria, que receba como parâmetro um número e retorne a soma dos números antecessores a ele. Por exemplo:
+
+function somatoria(x){
+            var soma=0;
+            for( var i=0; i<x; i++){
+                    soma= soma+i;
+           }
+      return soma;
+        }
+
+
+
+4. As calorias são calculadas da seguinte maneira: calorias (que consome a cada volta), ou seja 5 multiplicado (*) pelo número da volta atual, já que cada vez as voltas consomem mais e mais calorias.
+
+Sabendo isso, crie uma função chamada caloriasDeTrote(), que recebe por parâmetro o número de voltas representado por um valor numérico e retorne a quantidade de calorias que será consumida.
+
+Por exemplo:
+
+ 	 caloriasDeTrote(2)
+Deveria devolver 15 onde 5 calorias são da primeira volta (5 * 1) mais 10 calorias da segunda (5 * 2).
+Deveria devolver 15 onde 5 calorias são da primeira volta (5 * 1) mais 10 calorias da segunda (5 * 2).
+
+function caloriasDeTrote(nVoltas){
+
+ var caloriasDeTrote = 0;
+
+ for(var i = 1; i < nVoltas+1; i++) {
+
+  caloriasDeTrote += 5 * i;
+
+ } return caloriasDeTrote;
+
+}
+
+
