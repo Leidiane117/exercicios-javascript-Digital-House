@@ -2,7 +2,7 @@
 
 ## Arquivos
 
-* exercicios VScode.JS- Arquivo no formato Js contendo todos os códigos com as respostas e comentários de todos os exercícios 
+* exerciciosVSCode.js- Arquivo no formato Js contendo todos os códigos com as respostas e comentários de todos os exercícios 
 
 * exercícios condicionais - Arquivo contendo exercícios de estruturas condicionais em linguagem JavaScript, com respostas. 
 
