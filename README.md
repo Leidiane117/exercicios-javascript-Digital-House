@@ -10,6 +10,6 @@
 
 ## Ferramentas Utilizadas
 
-* Visual Strudio Code- Como editor de texto
+* Visual Studio Code- Como editor de texto
 
 * Linux Ubuntu - Como sistema operacional
